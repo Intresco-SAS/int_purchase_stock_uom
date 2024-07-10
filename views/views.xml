@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="int_purchase_stock_uom.list">
+      <field name="name">int_purchase_stock_uom list</field>
+      <field name="model">int_purchase_stock_uom.int_purchase_stock_uom</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="int_purchase_stock_uom.action_window">
+      <field name="name">int_purchase_stock_uom window</field>
+      <field name="res_model">int_purchase_stock_uom.int_purchase_stock_uom</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="int_purchase_stock_uom.action_server">
+      <field name="name">int_purchase_stock_uom server</field>
+      <field name="model_id" ref="model_int_purchase_stock_uom_int_purchase_stock_uom"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="int_purchase_stock_uom" id="int_purchase_stock_uom.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="int_purchase_stock_uom.menu_1" parent="int_purchase_stock_uom.menu_root"/>
+    <menuitem name="Menu 2" id="int_purchase_stock_uom.menu_2" parent="int_purchase_stock_uom.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="int_purchase_stock_uom.menu_1_list" parent="int_purchase_stock_uom.menu_1"
+              action="int_purchase_stock_uom.action_window"/>
+    <menuitem name="Server to list" id="int_purchase_stock_uom" parent="int_purchase_stock_uom.menu_2"
+              action="int_purchase_stock_uom.action_server"/>
+-->
+  </data>
+</odoo>
